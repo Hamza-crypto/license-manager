@@ -6,7 +6,7 @@
  */
 
  // Hook into the order completed action
-add_action('woocommerce_order_status_completed', 'schedule_license_key_email', 10, 1);
+add_action('woocommerce_order_status_completed', 'schedule_license_key_email', 83, 1);
 
 function schedule_license_key_email($order_id) {
     // Schedule the event to run after 10 seconds
